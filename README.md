@@ -57,7 +57,7 @@ with a "mysql" hostname. The exposed "some-mysql" ports are available to the app
 
     # starts mysql with our convenient script (creates named "mysql" container)
     ./runmysqld.sh
-    # now start ANOTHER container, linked to "mysql"i, to run mysql client
+    # now start ANOTHER container, linked to "mysql", to run mysql client
     # yes, using the same image, why not?
     docker run -it --link mysql:mysql --rm andrefernandes/docker-mysql mysql -h mysql -ppassword
 
